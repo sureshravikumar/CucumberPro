@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="41.411411">
+<testcase classname="To validate Login Functionality of FaceBook Apllication" name="To validate login with invalid username and innvalid password" time="10.425301">
+<system-out><![CDATA[Given User needs to be in login page........................................passed
+When User should enter invalid "Java" and invalid "java"....................passed
+And User Clicks login button................................................passed
+Then User will redirect invalid credentail page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Login Functionality of FaceBook Apllication" name="To validate login with invalid username and innvalid password 2" time="6.893766">
+<system-out><![CDATA[Given User needs to be in login page........................................passed
+When User should enter invalid "Selenium" and invalid "selenium"............passed
+And User Clicks login button................................................passed
+Then User will redirect invalid credentail page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Login Functionality of FaceBook Apllication" name="To validate login with invalid username and innvalid password 3" time="6.95906">
+<system-out><![CDATA[Given User needs to be in login page........................................passed
+When User should enter invalid "Testing" and invalid "testing"..............passed
+And User Clicks login button................................................passed
+Then User will redirect invalid credentail page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate search functionality of user page" name="To search the Searchability of desired product" time="17.133284">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:31)&#13;&#10;&#9;at org.stepdefinition2.StepDefinition3.user_clicks_the_search_button(StepDefinition3.java:31)&#13;&#10;&#9;at ✽.User clicks the search button(file:src/test/resources/Features/products.feature:10)&#13;&#10;"><![CDATA[Given user needs to been in amazon page.....................................passed
+When User will enter product name in search box.............................passed
+And User clicks the search button...........................................failed
+Then User will redirect to product page.....................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at org.stepdefinition2.StepDefinition3.user_clicks_the_search_button(StepDefinition3.java:31)
+	at ✽.User clicks the search button(file:src/test/resources/Features/products.feature:10)
+]]></failure>
+</testcase>
+</testsuite>
